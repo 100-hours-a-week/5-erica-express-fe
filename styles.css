@@ -1,0 +1,30 @@
+:root {
+  --button-enabled: #7f6aee;
+  --button-disabled: #aca0eb;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #f4f5f7;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.helperText {
+  color: #ff0000;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.helperTextContainer {
+  margin-top: 0.2rem;
+  height: 2rem;
+  width: 100%;
+}

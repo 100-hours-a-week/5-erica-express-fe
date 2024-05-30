@@ -1,0 +1,272 @@
+.main {
+  margin: 1rem auto 5rem;
+  max-width: 60rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  width: 100%;
+}
+
+.boardTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.updateBoard,
+.deleteBoard {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.1rem 1rem;
+  font-size: 1.3rem;
+  color: black;
+  cursor: pointer;
+  border: 0.1rem solid black;
+  height: 3rem;
+  box-sizing: border-box;
+}
+
+.boardButton {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.boardHeaderBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.writer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.writerImage {
+  border-radius: 50%;
+  border: 0.1rem solid black;
+}
+
+.postWriteDate {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+hr {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.boardImage {
+  width: 100%;
+  height: 30rem;
+  background-color: lightgrey;
+  border-radius: 1rem;
+}
+
+.boardContent {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.boardAction {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.readCount,
+.commentCount {
+  background-color: lightgrey;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+.commentContainer {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.writeComment {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#commentInput {
+  width: 100%;
+  padding: 2rem;
+  border: 0;
+  box-sizing: border-box;
+  resize: none;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+#commentInput:focus {
+  outline: none;
+}
+
+.line {
+  width: 90%;
+  height: 0.1rem;
+  background-color: lightgrey;
+  margin: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.commentPostButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.writeButton,
+.updateButton {
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: var(--button-disabled);
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: 0;
+  width: fit-content;
+}
+
+.updateButton {
+  display: none;
+}
+
+.commentList {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.commentWriterImage {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.1rem solid black;
+}
+
+.comment {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentWriter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.commentBody {
+  margin-left: 5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: fit-content;
+}
+
+#updateCommentBody {
+  font-size: 1.3rem;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  resize: none;
+  border-radius: 1rem;
+}
+
+.updateCommentButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.commentUpdateConfirm {
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+}
+
+.commentUpdateCancel {
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+}
+
+.commentButton {
+  display: flex;
+  gap: 1rem;
+}
+
+.commentUpdate,
+.commentDelete {
+  cursor: pointer;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+  font-size: 1.3rem;
+  color: black;
+  border: 0.1rem solid black;
+}
