@@ -15,7 +15,6 @@
 
 - Front-end: React, Js
 - 개발 및 이슈 관리: Github
-- 디자인: [Figma](https://www.figma.com/file/uzVLRNRe4ocdIjr7xegIuf/%EA%B5%90%EC%9E%AC%EC%9A%A9-%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0-%EC%9B%B9?type=design&node-id=670-761&mode=design&t=SrSse8WnMccf06Nw-0)
   <br/>
 
 ## 2. 프로젝트 구조
