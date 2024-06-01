@@ -7,13 +7,17 @@ commentInput.addEventListener('input', () => {
 	const comment = commentInput.value.trim()
 
 	if (comment) {
-		commentRegisterButton.style.backgroundColor = '#7f6aee'
+		commentRegisterButton.style.backgroundColor = '#70a7f9'
+		commentRegisterButton.style.color = '#ffffff'
 	} else {
 		commentRegisterButton.style.backgroundColor = ''
+		commentRegisterButton.style.color = ''
 	}
 })
 
-commentRegisterButton.addEventListener('click', async () => {
+commentRegisterButton.addEventListener('click', onClickAddFunction)
+
+async function onClickAddFunction() {
 	if (!commentInput.value) {
 		return
 	}
@@ -44,4 +48,4 @@ commentRegisterButton.addEventListener('click', async () => {
 			commentRegisterButton.disabled = false
 			return
 	}
-})
+}

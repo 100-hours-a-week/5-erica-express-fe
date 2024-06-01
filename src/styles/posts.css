@@ -1,11 +1,11 @@
 .main {
-	margin: 2rem auto 5rem;
+	margin: 7rem auto 0;
 	max-width: 128rem;
 	box-sizing: border-box;
 	padding: 0 2rem;
 	width: 100%;
 	gap: 4rem;
-	height: calc(100% - 90px);
+	height: calc(100vh - 80px);
 	display: flex;
 }
 
@@ -13,11 +13,13 @@
 	max-width: 70rem;
 	width: 100%;
 	height: 100%;
+	height: 100%;
 	overflow-y: auto;
 }
 
 .wrapper {
 	margin-top: 3rem;
+	margin-bottom: 3rem;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -187,6 +189,9 @@ hr {
 }
 
 .topicContainer {
+	top: 0;
+	left: 0;
+	width: 23rem;
 	background-color: white;
 	border-radius: 2rem;
 }
@@ -203,7 +208,6 @@ hr {
 
 .topicList {
 	padding: 0 1rem 2rem;
-	display: flex;
 	flex-direction: column;
 	font-size: 1.4rem;
 	margin-top: 2rem;
@@ -221,14 +225,17 @@ hr {
 }
 
 .rightSideBar {
-	width: 27rem;
+	width: 23rem;
 	border-radius: 2rem;
 }
 
 .leftBannerImage {
 	width: 100%;
-	box-shadow: 0 0.2rem 1.4rem 0.2rem rgba(0, 0, 0, 0.102);
 	border-radius: 2rem;
+}
+
+.leftBannerImage:hover {
+	box-shadow: 0 0.2rem 1.4rem 0.2rem rgba(0, 0, 0, 0.102);
 }
 
 .top10 {
@@ -266,7 +273,19 @@ hr {
 
 .top10wrapper {
 	display: flex;
-	padding: 0 2rem 2rem;
+	padding: 0 1rem 2rem;
 	flex-direction: column;
 	margin-top: 1rem;
+}
+
+@media (max-width: 1280px) {
+	.rightSideBar {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.leftSideBar {
+		display: none;
+	}
 }

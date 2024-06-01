@@ -31,7 +31,7 @@ updateButton.addEventListener('click', async () => {
 	switch (updateResponse.status) {
 		case 201:
 			document.querySelector('.helperText').style.display = 'none'
-			updateButton.style.backgroundColor = '#7f6aee'
+			updateButton.style.backgroundColor = '#70a7f9'
 			setTimeout(() => {
 				alert('비밀번호가 수정되었습니다.')
 				updateButton.style.backgroundColor = ''

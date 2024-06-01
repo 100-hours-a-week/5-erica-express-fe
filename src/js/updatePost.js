@@ -12,7 +12,7 @@ const onInputHandler = () => {
 	const content = document.getElementById('boardContentInput').value.trim()
 
 	if (title && content) {
-		updateButton.style.backgroundColor = '#7f6aee'
+		updateButton.style.backgroundColor = '#70a7f9'
 		document.querySelector('.helperText').innerHTML = ''
 	} else {
 		updateButton.style.backgroundColor = ''

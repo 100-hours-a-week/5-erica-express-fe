@@ -10,7 +10,7 @@ const onInputHandler = () => {
 	const content = contentInput.value.trim()
 
 	if (title && content) {
-		writeButton.style.backgroundColor = '#7f6aee'
+		writeButton.style.backgroundColor = '#70a7f9'
 		document.querySelector('.helperText').innerHTML = ''
 	} else {
 		writeButton.style.backgroundColor = ''

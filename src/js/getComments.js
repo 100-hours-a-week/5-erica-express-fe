@@ -25,8 +25,8 @@ const readComments = comment => {
         <div class="commentWriterDate">${date}</div>
       </div>
       <div class="commentButton">
-        <button class="commentUpdate">수정</button>
-        <button class="commentDelete">삭제</button>
+        <button class="commentUpdate">✏️</button>
+        <button class="commentDelete">🗑️</button>
       </div>
     </div>
     <div class="commentBody">${comment.comment}</div>
@@ -118,9 +118,11 @@ const readComments = comment => {
 			const comment = commentInput.value.trim()
 
 			if (comment) {
-				updateButton.style.backgroundColor = '#7f6aee'
+				updateButton.style.backgroundColor = '#5197FF'
+				updateButton.style.color = '#ffffff'
 			} else {
 				updateButton.style.backgroundColor = ''
+				updateButton.style.color = ''
 			}
 		})
 	})

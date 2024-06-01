@@ -35,35 +35,43 @@ const readPost = post => {
 
 	postList.innerHTML = `
     <div class="boardHeader">
-      <p class="boardTitle">${post.title}</p>
-      <div class="boardHeaderBottom">
-        <div class="writer">
-          <img class="writerImage" 
-          alt="profile image" 
-          src=${post.profileImage}
-          style="width: 30px; height: 30px" />
-          <p class="postWriterName">${post.nickname}</p>
-          <div class="postWriteDate">${date}</div>
+      <div class="boardHeaderBottom"> 
+        <div class="boardHeaderRight">
+          <div class="writer">
+            <img class="writerImage" 
+              alt="profile image" 
+              src=${post.profileImage}
+              style="width: 30px; height: 30px" />
+            <p class="postWriterName">${post.nickname}</p>
+          </div>
+          <div class="boardTag">
+            ${post.type === 'coding' ? '🖥️ 개발' : '🤔 코딩'}
+          </div>
         </div>
         <div class="boardButton">
-          <button class="updateBoard">수정</button>
-          <button class="deleteBoard">삭제</button>
+          <button class="updateBoard">✏️</button>
+          <button class="deleteBoard">🗑️</button>
         </div>
       </div>
     </div>
-    <div class="boardBody">
-      <div class="boardImageContainer"></div>
-      <div class="boardContent">${post.content}</div>
-    </div>
-    <div class="boardAction">
-      <div class="readCount">
-        <strong class="readNumber">${postView}</strong>
-        <div>조회수</div>
-      </div> 
-      <div class="commentCount">
-        <strong class="commentNumber">${postComment}</strong>
-        <div>댓글수</div>
-      </div> 
+    <div class="boardBodyContainer">
+      <p class="boardTitle">${post.title}</p>
+      <div class="boardBody">
+        <div class="boardImageContainer"></div>
+        <div class="boardContent">${post.content}</div>
+      </div>
+      <hr class="boardLine" />
+      <div class="boardBottom">
+        <div class="boardAction">
+          <div class="readCount">
+            <strong class="readNumber">👀 ${postView}</strong>
+          </div> 
+          <div class="commentCount">
+            <strong class="commentNumber">🗨️ ${postComment}</strong>
+          </div> 
+        </div>
+        <div class="postWriteDate">${date}</div>
+      </div>
     </div>
   `
 

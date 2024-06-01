@@ -171,7 +171,7 @@ signUpButton.addEventListener('click', async () => {
 		return
 	}
 
-	signUpButton.style.backgroundColor = '#7f6aee'
+	signUpButton.style.backgroundColor = '#70a7f9'
 
 	const response = await fetch(`${backHost}/api/users/signup`, {
 		headers,

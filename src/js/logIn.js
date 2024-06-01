@@ -55,7 +55,7 @@ logInButton.addEventListener('click', async () => {
 	//응답 상태에 따른 분기
 	switch (responseData.status) {
 		case 200:
-			logInButton.style.backgroundColor = '#7f6aee'
+			logInButton.style.backgroundColor = '#70a7f9'
 			helperText.innerHTML = ''
 			setTimeout(() => {
 				location.href = '/board'

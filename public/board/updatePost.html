@@ -22,18 +22,22 @@
 		<!--중복되는 navbar은 나중에 하나의 컴포넌트로 빼서 각각 import 할 예정-->
 		<section class="navbar"></section>
 		<section class="main">
-			<p class="pageTitle">게시글 수정</p>
+			<div class="pageTitle">✏️ 스피치 수정</div>
 			<form class="boardContainer">
 				<div class="boardTitle">
 					<label for="boardTitleInput" class="inputTitle">제목*</label>
-					<input type="text" value="" id="boardTitleInput" />
+					<input
+						type="text"
+						value=""
+						id="boardTitleInput"
+						maxlength="26"
+						placeholder="제목을 입력해주세요. (최대 26글자)"
+					/>
 				</div>
-				<hr />
 				<div class="boardContent">
 					<label for="boardContentInput" class="inputTitle">내용*</label>
-					<textarea type="text" rows="10" id="boardContentInput"></textarea>
+					<textarea type="text" rows="10" id="boardContentInput" placeholder="내용을 입력해주세요"></textarea>
 				</div>
-				<hr />
 				<div class="helperTextContainer">
 					<div class="helperText"></div>
 				</div>
