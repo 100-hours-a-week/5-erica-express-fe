@@ -123,7 +123,7 @@ const checkNicknameValidation = async nickname => {
 	}
 
 	//닉네임이 중복일시
-	const isNicknameDuplicate = await fetch(`${backHost}/api/users/nickname/${nickname}`, {
+	const isNicknameDuplicate = await fetch(`${backHost}/api/users/signup/nickname/${nickname}`, {
 		headers,
 		credentials: 'include',
 		method: 'POST'

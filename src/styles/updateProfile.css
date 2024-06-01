@@ -1,11 +1,24 @@
 .main {
-	margin: 7rem auto 5rem;
-	max-width: 40rem;
-	width: 100%;
-	height: fit-content;
+	margin: 13rem auto 0;
+	width: 60rem;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
+}
+
+.updateContainer {
+	margin: 3rem 0 0;
+	padding: 3rem;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 2rem;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0 0.2rem 1.4rem 0.2rem rgba(0, 0, 0, 0.102);
 }
 
 .wrapper {
@@ -13,6 +26,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	max-width: 35rem;
 }
 
 .pageTitle {
@@ -33,6 +47,13 @@
 	width: 100%;
 }
 
+.profileEmail,
+.profileNickname {
+	margin-top: 2rem;
+	display: flex;
+	gap: 2rem;
+}
+
 .imageContainer {
 	position: relative;
 	width: 15rem;
@@ -47,16 +68,16 @@
 .inputTitle {
 	font-size: 1.5rem;
 	font-weight: 700;
-	width: 100%;
+	width: 6rem;
 }
 
 #emailInput {
-	margin-top: 0.1rem;
 	font-size: 1.5rem;
 	font-weight: 700;
 }
 
 .imageShow {
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -79,7 +100,7 @@
 }
 
 .imageUpdateButton {
-	border-radius: 30%;
+	border-radius: 50%;
 	border: 1px solid white;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
@@ -88,19 +109,25 @@
 	font-weight: 700;
 }
 
-.emailInput {
-	margin-top: 1rem;
-	font-size: 1.4rem;
-	font-weight: 400;
+.imageInputTitle {
+	width: 15rem;
 }
 
+#emailInput,
 #nicknameInput {
-	margin-top: 1rem;
 	border: 0;
-	width: 100%;
-	padding: 1rem;
-	border-radius: 2rem;
+	background-color: #f4f5f7;
+	font-size: 1.4rem;
+	font-weight: 400;
+	width: 25rem;
+	line-height: 2rem;
+	border-radius: 1rem;
 	box-sizing: border-box;
+	padding: 1rem;
+}
+
+#nicknameInput:focus {
+	outline: none;
 }
 
 .profilebutton {
@@ -114,7 +141,7 @@
 
 .updateButton {
 	cursor: pointer;
-	background-color: var(--button-disabled);
+	background-color: var(--button-enabled);
 	border-radius: 1rem;
 	border: 0;
 	width: 100%;
@@ -138,14 +165,4 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.updateMessage {
-	display: none;
-	margin-top: 2rem;
-	padding: 1rem 1.5rem;
-	background-color: var(--button-disabled);
-	color: white;
-	font-size: 1.6rem;
-	border-radius: 2rem;
 }

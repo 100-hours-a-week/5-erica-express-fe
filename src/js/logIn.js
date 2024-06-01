@@ -56,6 +56,7 @@ logInButton.addEventListener('click', async () => {
 	switch (responseData.status) {
 		case 200:
 			logInButton.style.backgroundColor = '#70a7f9'
+			logInButton.style.color = '#fffff'
 			helperText.innerHTML = ''
 			setTimeout(() => {
 				location.href = '/board'

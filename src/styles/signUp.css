@@ -1,6 +1,6 @@
 .main {
-	margin: 7rem auto 5rem;
-	max-width: 40rem;
+	margin: 13rem auto 5rem;
+	max-width: 70rem;
 	width: 100%;
 	height: fit-content;
 	display: flex;
@@ -8,9 +8,10 @@
 	flex-direction: column;
 }
 
-.imageContainer,
+.topContainer,
 .bottomContainer {
 	width: 100%;
+	max-width: 35rem;
 }
 
 .bottomContainer {
@@ -21,9 +22,17 @@
 	flex-direction: column;
 }
 
+.logInLogo {
+	width: 20rem;
+}
+
 .mainTitle {
-	font-weight: 600;
-	font-size: 1.8rem;
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 700;
 }
 
 .profileUpdateImage {
@@ -36,7 +45,21 @@
 }
 
 input {
+	border: 0;
+	background-color: #f4f5f7;
+	font-size: 1.4rem;
+	font-weight: 400;
+	width: 100%;
+	line-height: 2rem;
+	border-radius: 1rem;
+	box-sizing: border-box;
+	padding: 1rem;
 	margin-top: 1rem;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
 }
 
 #imageInput {
@@ -49,24 +72,11 @@ input {
 	font-size: 1.5rem;
 }
 
-#emailInput,
-#passwordInput,
-#passwordCheckInput,
-#nicknameInput {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 1rem;
-	height: 3.5rem;
-	font-size: 1.3rem;
-	font-weight: 400;
-	border-radius: 1rem;
-	border: 0.05rem solid #181717;
-}
-
 .imageShow {
 	display: none;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 	border-radius: 50%;
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -104,7 +114,17 @@ input {
 }
 
 .signUpContainer {
+	margin: 3rem 0 0;
+	padding: 3rem;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 2rem;
+	background-color: white;
 	width: 100%;
+	box-shadow: 0 0.2rem 1.4rem 0.2rem rgba(0, 0, 0, 0.102);
 }
 
 .signUpButton {
@@ -126,9 +146,9 @@ input {
 }
 
 .goLoginButton {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	font-size: 1.3rem;
-	font-weight: 600;
+	font-weight: 400;
 	color: black;
 	text-decoration: none;
 }

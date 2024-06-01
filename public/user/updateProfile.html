@@ -23,37 +23,40 @@
 		<!--중복되는 navbar은 나중에 하나의 컴포넌트로 빼서 각각 import 할 예정-->
 		<section class="navbar"></section>
 		<section class="main">
-			<p class="pageTitle">회원정보 수정</p>
-			<form class="wrapper">
-				<div class="profileTitle">
-					<p class="inputTitle">프로필 사진*</p>
-					<div class="imageContainer">
-						<img class="imageShow" alt="profile image" />
-						<div class="imageUpdate">
-							<label for="imageInput" class="imageUpdateButton">변경</label>
-							<input id="imageInput" type="file" accept="images/*" />
+			<p class="pageTitle">🖐🏻 회원정보 수정</p>
+			<div class="updateContainer">
+				<form class="wrapper">
+					<div class="profileTitle">
+						<p class="inputTitle imageInputTitle">프로필 사진*</p>
+						<div class="imageContainer">
+							<img class="imageShow" alt="profile image" />
+							<div class="imageUpdate">
+								<label for="imageInput" class="imageUpdateButton">변경</label>
+								<input id="imageInput" type="file" accept="images/*" />
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="profileEmail">
-					<label for="emailInput" class="inputTitle">이메일</label>
-					<div id="emailInput"></div>
-				</div>
-				<div class="profileNickname">
-					<label for="nicknameInput" class="inputTitle">닉네임</label>
-					<input type="text" id="nicknameInput" />
-					<div class="helperTextContainer">
-						<div class="helperText"></div>
+					<div class="profileEmail">
+						<label for="emailInput" class="inputTitle">이메일</label>
+						<div id="emailInput"></div>
 					</div>
-				</div>
+					<div class="profileNickname">
+						<label for="nicknameInput" class="inputTitle">닉네임</label>
+						<div class="inputContainer">
+							<input type="text" maxlength="10" id="nicknameInput" />
+							<div class="helperTextContainer">
+								<div class="helperText"></div>
+							</div>
+						</div>
+					</div>
+					<div class="profilebutton">
+						<button type="button" class="updateButton">수정하기</button>
+					</div>
+				</form>
 				<div class="profilebutton">
-					<button type="button" class="updateButton">수정하기</button>
+					<button class="deleteButton">회원 탈퇴</button>
 				</div>
-			</form>
-			<div class="profilebutton">
-				<button class="deleteButton">회원 탈퇴</button>
 			</div>
-			<div class="updateMessage">수정완료</div>
 		</section>
 		<div class="modalContainer">
 			<div class="deem"></div>

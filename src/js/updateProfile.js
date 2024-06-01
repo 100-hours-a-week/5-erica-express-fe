@@ -31,8 +31,6 @@ const reader = new FileReader()
 	}
 
 	updateButton.addEventListener('click', async () => {
-		const toastMessage = document.querySelector('.updateMessage')
-		toastMessage.style.display = 'none'
 		const isEmpty = !nicknameInput.value
 		if (isEmpty) {
 			nicknameText.innerHTML = '* 수정할 닉네임을 입력해주세요.'
@@ -79,12 +77,8 @@ const reader = new FileReader()
 
 		switch (updateData.status) {
 			case 201:
-				nicknameText.style.display = 'none'
-				toastMessage.style.display = 'block'
-				setTimeout(() => {
-					toastMessage.style.display = 'none'
-				}, 2000)
 				alert('수정 완료')
+				location.href = '/board'
 				return
 			default:
 				alert('수정 실패')

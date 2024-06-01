@@ -4,7 +4,7 @@ const profileImage = document.querySelector('.profileImage')
 	const currentUrl = location.pathname
 
 	const showProfile = currentUrl !== '/' && currentUrl !== '/index.html' && currentUrl !== '/signUp'
-	const showWriteButton = currentUrl !== '/board/write'
+	const showWriteButton = currentUrl !== '/board/write' && showProfile
 
 	const response = await fetch(`${backHost}/api/users/user`, {
 		headers,
@@ -65,7 +65,8 @@ const profileImage = document.querySelector('.profileImage')
 
 	const logo = document.querySelector('.logo')
 	logo?.addEventListener('click', () => {
-		if (currentUrl !== '/' && currentUrl !== 'signUp' && currentUrl !== '/index.html') location.href = '/board'
+		if (showProfile) location.href = '/board'
+		else location.href = '/'
 	})
 
 	const writePost = document.querySelector('.writeBtnNav')

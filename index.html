@@ -17,7 +17,7 @@
 		<!--중복되는 navbar은 나중에 하나의 컴포넌트로 빼서 각각 import 할 예정-->
 		<section class="navbar"></section>
 		<section class="logIn">
-			<div class="logInTitle">로그인</div>
+			<div class="logInTitle"><img class="logInLogo" src="/src/images/logo.png" /></div>
 			<form class="logInContent">
 				<div class="emailContainer">
 					<label for="email" class="title">이메일</label>
@@ -32,8 +32,8 @@
 				</div>
 				<!--href="board/posts.html"-->
 				<button type="button" class="logInButton">로그인</button>
+				<a href="/signUp" class="signUpButton">회원가입</a>
 			</form>
-			<a href="/signUp" class="signUpButton">회원가입</a>
 		</section>
 		<script type="module" src="/src/js/logIn.js"></script>
 		<script type="module" src="/src/js/navbar.js"></script>
