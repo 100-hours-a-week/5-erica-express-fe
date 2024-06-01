@@ -11,41 +11,43 @@
 		<link rel="stylesheet" type="text/css" href="/src/styles/navbar.css" />
 		<link rel="stylesheet" type="text/css" href="/styles.css" />
 		<script type="text/javascript" src="/src/js/static.js"></script>
-		<link
-			rel="preload"
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-			as="style"
-		/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 		<title>아무 말 대잔치</title>
 	</head>
 	<body>
 		<!--중복되는 navbar은 나중에 하나의 컴포넌트로 빼서 각각 import 할 예정-->
-		<section class="navbar">
-			<div class="navbarContainer">
-				<div class="space"></div>
-				<a class="navbarTitle" href="/board">아무 말 대잔치</a>
-				<div class="userSetting">
-					<img alt="profile image" style="object-fit: cover" class="profileImage" src="/src/images/profile_img.webp" />
-					<div class="settingList">
-						<a href="/user/update" class="profileUpdate setting">회원정보수정</a>
-						<a href="/user/password" class="passwordUpdate setting">비밀번호수정</a>
-						<a href="/" class="logOut setting">로그아웃</a>
+		<section class="navbar"></section>
+		<section class="main">
+			<div class="leftSideBar">
+				<div class="topicContainer">
+					<div class="topicTitle">🌱 토픽</div>
+					<div class="topicList">
+						<div class="topic all">전체</div>
+						<div class="topic coding">개발</div>
+						<div class="topic other">고민</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="main">
-			<span class="title">
-				<p>
-					안녕하세요, <br />
-					아무 말 대잔치 <strong>게시판</strong> 입니다.
-				</p>
-			</span>
-			<div class="writeContainer">
-				<a class="writeBtn" href="/board/write"> 게시글 작성 </a>
+			<div class="middle">
+				<div class="writeContainer">
+					<img alt="유저 이미지" src="" class="userImage"></img>
+          <div class="writeButton">
+            📣 어떤 주제든 스피치해보세요! 이야기의 시작이 됩니다!
+          </div>
+				</div>
+        <hr class="wrapperLine"/>
+				<!--게시물 목록-->
+        <div class="wrapperTitle"></div>
+				<div class="wrapper"></div>
 			</div>
-			<!--게시물 목록-->
-			<div class="wrapper"></div>
+			<div class="rightSideBar">
+        <img alt="banner" class="leftBannerImage" src="/src/images/rightBanner.png" />
+        <div class="top10">
+          <div class="top10Title">🔥Top 10</div>
+          <div class="top10wrapper"></div>
+        </div>
 		</section>
 	</body>
 	<script type="module" src="/src/js/getPosts.js"></script>

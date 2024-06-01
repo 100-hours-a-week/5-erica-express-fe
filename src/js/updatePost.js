@@ -4,7 +4,6 @@ const content = document.getElementById('boardContentInput')
 const postImage = document.getElementById('boardInputImage')
 
 const updateButton = document.querySelector('.updateButton')
-const backButton = document.querySelector('.beforeBtn')
 
 const reader = new FileReader()
 
@@ -75,12 +74,6 @@ const read = post => {
 		}
 	})
 })()
-
-backButton.addEventListener('click', () => {
-	if (urlPostId) {
-		location.replace = `/board/[id]/post.html?postId=${urlPostId}`
-	}
-})
 
 postImage.addEventListener('change', event => {
 	reader.onload = data => {

@@ -1,112 +1,116 @@
 .navbar {
-  border: 0.1rem solid black;
-  width: 100%;
-  height: 8rem;
-  font-size: 2.5rem;
-  text-align: center;
+	width: 100%;
+	height: 5rem;
+	font-size: 2.5rem;
+	text-align: center;
+	background-color: white;
+}
+
+.logo {
+	width: 10rem;
+	cursor: pointer;
 }
 
 .navbarContainer {
-  width: 100%;
-  height: 100%;
-  max-width: 60rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	box-sizing: border-box;
+	max-width: 128rem;
+	padding: 0 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .navbarTitle {
-  margin: 2rem auto;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
-.beforeBtn {
-  cursor: pointer;
-  width: 3.6rem;
-  border: 0;
-  background-color: transparent;
-}
-
-.backImage {
-  width: 1rem;
-  height: 1.5rem;
+	text-decoration: none;
+	color: black;
+	width: fit-content;
+	cursor: pointer;
 }
 
 .profileImage {
-  width: 3.6rem;
-  height: 3.6rem;
-  border-radius: 50%;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-body {
-  /* 익스플로러 스크롤바 옵션 */
-  -ms-overflow-style: none;
-  /* 파이어폭스 스크롤바 옵션 */
-  scrollbar-width: none;
-}
-
-.space {
-  width: 3.6rem;
-  height: 0.1rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
 }
 
 .userSetting {
-  width: 3.6rem;
-  height: 3.6rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+	width: 3.6rem;
+	height: 3.6rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
 }
 
 .settingList {
-  cursor: pointer;
-  display: none;
-  width: 15rem;
-  flex-direction: column;
-  position: absolute;
-  top: 2rem;
-  right: 3rem;
-  border-radius: 2rem;
+	cursor: pointer;
+	display: none;
+	width: 16rem;
+	box-sizing: border-box;
+	padding: 2rem;
+	border-radius: 2rem;
+	flex-direction: column;
+	background-color: aliceblue;
+	box-shadow: 0 0.2rem 1.4rem 0.2rem rgba(0, 0, 0, 0.102);
+	position: absolute;
+	top: 2rem;
+	right: 3rem;
+	border-radius: 2rem;
 }
 
 .userSetting:hover .settingList {
-  display: flex;
+	display: flex;
 }
 
 .settingList:hover {
-  display: flex;
+	display: flex;
 }
 
 .setting {
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 3rem;
-  background-color: lightgray;
-  font-size: 1.2rem;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 3rem;
+	font-size: 1.3rem;
+
+	border-radius: 2rem;
 }
 
-.profileUpdate:hover {
-  background-color: gray;
+.setting:hover {
+	background-color: #70a7f9;
+	color: white;
 }
 
-.passwordUpdate:hover {
-  background-color: gray;
+.writeBtnNav {
+	border-radius: 2rem;
+	gap: 0.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #70a7f9;
+	width: fit-content;
+	color: white;
+	padding: 0 1rem;
+	font-size: 1.3rem;
+	height: 3.5rem;
+	cursor: pointer;
 }
 
-.logOut:hover {
-  background-color: gray;
+.plus {
+	height: 1.6rem;
+	width: 1.6rem;
+}
+
+.right {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
 }
