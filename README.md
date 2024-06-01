@@ -124,6 +124,8 @@
 |---|---|---|---|
 |![image](https://github.com/100-hours-a-week/5-erica-express-fe/assets/81230764/f96873ad-36f8-4258-92e0-b0f0f5c047d0)|![image](https://github.com/100-hours-a-week/5-erica-express-fe/assets/81230764/17ac88da-b06a-4b47-ab01-06fdcdced779)|![image](https://github.com/100-hours-a-week/5-erica-express-fe/assets/81230764/95e9e091-139a-4cf2-9d99-e0d22d8d24e5)|![image](https://github.com/100-hours-a-week/5-erica-express-fe/assets/81230764/878fb30b-fdb2-448f-aa16-24e3e088e94d)|
 
+<br/>
+
 ## 트러블 슈팅
 
 추후 작성 ...
